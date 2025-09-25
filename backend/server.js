@@ -17,9 +17,9 @@ connectDB();
 app.use(express.json());
 app.use(
   cors({
-    origin: "http://localhost:5173" || "https://expensenote-lm0a.onrender.com",
-    credentials: true,
+    origin: ["http://localhost:5173", "https://expense-note-one.vercel.app"],
     methods: ["GET", "POST", "PUT", "DELETE"],
+    credentials: true,
   })
 );
 app.use(helmet());

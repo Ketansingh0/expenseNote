@@ -1,4 +1,4 @@
-const host = "http://localhost:4000";
+const host = import.meta.env.VITE_API_URL || "http://localhost:4000/api";
 
 export const registerAPI = `${host}/api/auth/register`;
 export const loginAPI = `${host}/api/auth/login`;
